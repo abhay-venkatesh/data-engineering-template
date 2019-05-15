@@ -16,3 +16,12 @@ lib/
         dataset_analyzer.py
 main.py
 ```
+
+## Installation
+
+### Windows
+
+```bash
+conda env create -f windows_env.yml
+pip install "git+https://github.com/philferriere/cocoapi.git#egg=pycocotools&subdirectory=PythonAPI"
+```

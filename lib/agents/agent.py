@@ -4,6 +4,6 @@ from lib.analyzers.analyzer import Analyzer
 
 class Agent:
     def run(self, config):
-        builder = TrainBuilder(config)
-        dataset = builder.build()
-        Analyzer.verify(config, dataset)
+        dataset = TrainBuilder(config).build()
+        analyzer = Analyzer(config)
+        analyzer.verify(dataset)
